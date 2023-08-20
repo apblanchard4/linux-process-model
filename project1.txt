@@ -1,0 +1,417 @@
+Script started on 2022-09-06 23:46:51-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="203" LINES="48"]
+^[[?2004h^[]0;meg@meg-CS3013: ~/project1/Project1^G^[[01;32mmeg@meg-CS3013^[[00m:^[[01;34m~/project1/Project1^[[00m$ make^M
+^[[?2004l^Mgcc -o prolific prolific.c ^M
+^[[01m^[[Kprolific.c:^[[m^[[K In function M-bM-^@M-^X^[[01m^[[Kmain^[[m^[[KM-bM-^@M-^Y:^M
+^[[01m^[[Kprolific.c:26:19:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Kfork^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   26 |         int pid = ^[[01;35m^[[Kfork^[[m^[[K();  //fork the num of children, go into loop if child^M
+      |                   ^[[01;35m^[[K^~~~^[[m^[[K^M
+^[[01m^[[Kprolific.c:35:17:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Kwait^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   35 |                 ^[[01;35m^[[Kwait^[[m^[[K(); //wait for parent statement^M
+      |                 ^[[01;35m^[[K^~~~^[[m^[[K^M
+^[[01m^[[Kprolific.c:36:110:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Kgetpid^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   36 |                 printf("[Child, PID: %d]: I am the child and I will wait %d seconds and exit with code %d\n",^[[01;35m^[[Kgetpid^[[m^[[K() ,time, exitcode );^M
+      |                                                                                                              ^[[01;35m^[[K^~~~~~^[[m^[[K^M
+^[[01m^[[Kprolific.c:37:17:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Ksleep^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   37 |                 ^[[01;35m^[[Ksleep^[[m^[[K(time);  //wait for designated time^M
+      |                 ^[[01;35m^[[K^~~~~^[[m^[[K^M
+^[[01m^[[Kprolific.c:43:17:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Kwaitpid^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   43 |                 ^[[01;35m^[[Kwaitpid^[[m^[[K(pid); //wait on current child to finish before exit^M
+      |                 ^[[01;35m^[[K^~~~~~~^[[m^[[K^M
+gcc -o generation generation.c ^M
+^[[01m^[[Kgeneration.c:^[[m^[[K In function M-bM-^@M-^X^[[01m^[[Kmain^[[m^[[KM-bM-^@M-^Y:^M
+^[[01m^[[Kgeneration.c:19:19:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Kfork^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   19 |         int pid = ^[[01;35m^[[Kfork^[[m^[[K(); //create child^M
+      |                   ^[[01;35m^[[K^~~~^[[m^[[K^M
+^[[01m^[[Kgeneration.c:27:17:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Ksleep^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   27 |                 ^[[01;35m^[[Ksleep^[[m^[[K(1); //wait for parent statement^M
+      |                 ^[[01;35m^[[K^~~~~^[[m^[[K^M
+^[[01m^[[Kgeneration.c:28:111:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Kgetpid^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   28 |                 printf("[Child, PID: %d]: I was called with descendant count =%d. I'll have %d descendants\n",^[[01;35m^[[Kgetpid^[[m^[[K() ,lifespan, lifespan-1);^M
+      |                                                                                                               ^[[01;35m^[[K^~~~~~^[[m^[[K^M
+^[[01m^[[Kgeneration.c:34:17:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Kwait^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   34 |                 ^[[01;35m^[[Kwait^[[m^[[K(); //wait on current child to finish before exit^M
+      |                 ^[[01;35m^[[K^~~~^[[m^[[K^M
+gcc -o explorer explorer.c ^M
+^[[01m^[[Kexplorer.c:^[[m^[[K In function M-bM-^@M-^X^[[01m^[[Kmain^[[m^[[KM-bM-^@M-^Y:^M
+^[[01m^[[Kexplorer.c:62:17:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Kwait^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   62 |                 ^[[01;35m^[[Kwait^[[m^[[K();//wait on current child to finish before exit^M
+      |                 ^[[01;35m^[[K^~~~^[[m^[[K^M
+gcc -o slug slug.c^M
+gcc -o slugrace slugrace.c ^M
+^[[01m^[[Kslugrace.c:^[[m^[[K In function M-bM-^@M-^X^[[01m^[[Kmain^[[m^[[KM-bM-^@M-^Y:^M
+^[[01m^[[Kslugrace.c:54:27:^[[m^[[K ^[[01;35m^[[Kwarning: ^[[m^[[Kimplicit declaration of function M-bM-^@M-^X^[[01m^[[Kwaitpid^[[m^[[KM-bM-^@M-^Y [^[[01;35m^[[K^[]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration^G-Wimplicit-function-declaration^[]8;;^G^[[m^[[K]^M
+   54 |         status[counter] = ^[[01;35m^[[Kwaitpid^[[m^[[K(slugpids[counter],0,WNOHANG); //waitpid returns the status of each pid, store in the array^M
+      |                           ^[[01;35m^[[K^~~~~~~^[[m^[[K^M
+^[[?2004h^[]0;meg@meg-CS3013: ~/project1/Project1^G^[[01;32mmeg@meg-CS3013^[[00m:^[[01;34m~/project1/Project1^[[00m$ make^H^H^H^Hexit ^H^H^H^H^H^[[15@./explorer seed.tx^[[C^[[C^H^H^Hext^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hgeneration seed.txt^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[2Pprolific^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^M
+^[[?2004l^MSeed value: 12345^M
+Number of children: 8^M
+[Parent]: I am waiting for PID 3434 to finish^M
+[Child, PID: 3434]: I am the child and I will wait 3 seconds and exit with code 22^M
+[Child, PID: 3434]: Now exiting^M
+[Parent]: Child 3434 finished with status code 22^M
+[Parent]: I am waiting for PID 3435 to finish^M
+[Child, PID: 3435]: I am the child and I will wait 3 seconds and exit with code 24^M
+[Child, PID: 3435]: Now exiting^M
+[Parent]: Child 3435 finished with status code 24^M
+[Parent]: I am waiting for PID 3436 to finish^M
+[Child, PID: 3436]: I am the child and I will wait 2 seconds and exit with code 2^M
+[Child, PID: 3436]: Now exiting^M
+[Parent]: Child 3436 finished with status code 2^M
+[Parent]: I am waiting for PID 3437 to finish^M
+[Child, PID: 3437]: I am the child and I will wait 1 seconds and exit with code 22^M
+[Child, PID: 3437]: Now exiting^M
+[Parent]: Child 3437 finished with status code 22^M
+[Parent]: I am waiting for PID 3438 to finish^M
+[Child, PID: 3438]: I am the child and I will wait 1 seconds and exit with code 5^M
+[Child, PID: 3438]: Now exiting^M
+[Parent]: Child 3438 finished with status code 5^M
+[Parent]: I am waiting for PID 3439 to finish^M
+[Child, PID: 3439]: I am the child and I will wait 3 seconds and exit with code 38^M
+[Child, PID: 3439]: Now exiting^M
+[Parent]: Child 3439 finished with status code 38^M
+[Parent]: I am waiting for PID 3440 to finish^M
+[Child, PID: 3440]: I am the child and I will wait 2 seconds and exit with code 3^M
+[Child, PID: 3440]: Now exiting^M
+[Parent]: Child 3440 finished with status code 3^M
+[Parent]: I am waiting for PID 3441 to finish^M
+[Child, PID: 3441]: I am the child and I will wait 2 seconds and exit with code 29^M
+[Child, PID: 3441]: Now exiting^M
+[Parent]: Child 3441 finished with status code 29^M
+^[[?2004h^[]0;meg@meg-CS3013: ~/project1/Project1^G^[[01;32mmeg@meg-CS3013^[[00m:^[[01;34m~/project1/Project1^[[00m$ ./prolific seed.txt^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hmake^[[K^H^H^H^Hexit ^H^H^H^H^H^[[15@./explorer seed.tx^[[C^[[C^H^H^Hext^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hgeneration seed.txt^M
+^[[?2004l^MSeed value: 12345^M
+Random Descendant Count: 11^M
+ Time to meet the kids/grandkids/great grandkids^M
+ [Parent, PID: 3442]: I am waiting for 3443 to finish^M
+ [Child, PID: 3443]: I was called with descendant count =11. I'll have 10 descendants^M
+[Parent, PID: 3443]: I am waiting for 3444 to finish^M
+[Child, PID: 3444]: I was called with descendant count =10. I'll have 9 descendants^M
+[Parent, PID: 3444]: I am waiting for 3445 to finish^M
+[Child, PID: 3445]: I was called with descendant count =9. I'll have 8 descendants^M
+[Parent, PID: 3445]: I am waiting for 3446 to finish^M
+[Child, PID: 3446]: I was called with descendant count =8. I'll have 7 descendants^M
+[Parent, PID: 3446]: I am waiting for 3447 to finish^M
+[Child, PID: 3447]: I was called with descendant count =7. I'll have 6 descendants^M
+[Parent, PID: 3447]: I am waiting for 3449 to finish^M
+[Child, PID: 3449]: I was called with descendant count =6. I'll have 5 descendants^M
+[Parent, PID: 3449]: I am waiting for 3450 to finish^M
+[Child, PID: 3450]: I was called with descendant count =5. I'll have 4 descendants^M
+[Parent, PID: 3450]: I am waiting for 3451 to finish^M
+[Child, PID: 3451]: I was called with descendant count =4. I'll have 3 descendants^M
+[Parent, PID: 3451]: I am waiting for 3452 to finish^M
+[Child, PID: 3452]: I was called with descendant count =3. I'll have 2 descendants^M
+[Parent, PID: 3452]: I am waiting for 3453 to finish^M
+[Child, PID: 3453]: I was called with descendant count =2. I'll have 1 descendants^M
+[Parent, PID: 3453]: I am waiting for 3454 to finish^M
+[Child, PID: 3454]: I was called with descendant count =1. I'll have 0 descendants^M
+[Parent, PID 3453]: Child 3454 finished with status code 0^M
+[Parent, PID 3452]: Child 3453 finished with status code 1^M
+[Parent, PID 3451]: Child 3452 finished with status code 2^M
+[Parent, PID 3450]: Child 3451 finished with status code 3^M
+[Parent, PID 3449]: Child 3450 finished with status code 4^M
+[Parent, PID 3447]: Child 3449 finished with status code 5^M
+[Parent, PID 3446]: Child 3447 finished with status code 6^M
+[Parent, PID 3445]: Child 3446 finished with status code 7^M
+[Parent, PID 3444]: Child 3445 finished with status code 8^M
+[Parent, PID 3443]: Child 3444 finished with status code 9^M
+[Parent, PID 3442]: Child 3443 finished with status code 10^M
+^[[?2004h^[]0;meg@meg-CS3013: ~/project1/Project1^G^[[01;32mmeg@meg-CS3013^[[00m:^[[01;34m~/project1/Project1^[[00m$ ./generation seed.txt^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[2Pprolific^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hmake^[[K^H^H^H^Hexit ^H^H^H^H^H^[[15@./explorer seed.tx^[[C^[[C^M
+^[[?2004l^MSeed value: 12345^M
+Selection #1: /usr^M
+[Parent]: I am waiting for PID 3456 to finish^M
+[Child, PID: 3456]: Executing 'ls -tr' command..^M
+libx32	lib32  local  lib64  games  libexec  include  lib  share  bin  src  sbin^M
+[Parent]: Child 3456 finished with status code 0^M
+Selection #2: /usr/sbin^M
+[Parent]: I am waiting for PID 3457 to finish^M
+[Child, PID: 3457]: Executing 'ls -tr' command..^M
+update-grub-gfxpayload	    update-info-dir    blockdev		     update-shells	    pccardctl		       mke2fs		   arptables-save		iptables-translate^M
+tzconfig		    chroot	       blkzone		     remove-shell	    pptpsetup		       logsave		   arptables-restore		iptables-save^M
+update-fonts-alias	    pam-auth-update    blkid		     installkernel	    pptp		       filefrag		   arptables-nft-save		iptables-restore-translate^M
+update-fonts-dir	    update-initramfs   blkdiscard	     add-shell		    tarcat		       e4defrag		   arptables-nft-restore	iptables-restore^M
+update-fonts-scale	    aa-teardown        agetty		     mkfs.fat		    rmt-tar		       e4crypt		   arptables-nft		iptables-nft-save^M
+update-xmlcatalog	    visudo	       spice-vdagentd	     fsck.fat		    usb_modeswitch_dispatcher  e2undo		   arptables			iptables-nft-restore^M
+on_ac_power		    sudo_sendlog       pppstats		     fatlabel		    usb_modeswitch	       e2scrub_all	   apparmor_status		iptables-nft^M
+update-cracklib		    sudo_logsrvd       pppoe-discovery	     getweb		    usbmuxd		       e2scrub		   brltty			iptables-legacy-save^M
+gnome-menus-blacklist	    service	       pppdump		     mount.fuse3	    zerofree		       e2image		   bluetoothd			iptables-legacy-restore^M
+update-catalog		    ModemManager       pppd		     sgdisk		    rtkitctl		       e2fsck		   cpgr				iptables-legacy^M
+install-sgmlcatalog	    dmsetup	       chat		     gdisk		    iwspy		       e2freefrag	   cupsreject			iptables^M
+pam_getenv		    blkdeactivate      sysctl		     fixparts		    iwpriv		       dumpe2fs		   cupsenable			iucode-tool^M
+update-inetd		    ufw		       vipw		     cgdisk		    iwlist		       debugfs		   cupsdisable			lspcmcia^M
+deluser			    dpkg-reconfigure   usermod		     update-gsfontmap	    iwgetid		       badblocks	   delgroup			lsmod^M
+adduser			    dpkg-preconfigure  userdel		     hdparm		    iwevent		       wpa_supplicant	   depmod			mkdosfs^M
+iptables-apply		    zramctl	       useradd		     unix_update	    iwconfig		       wpa_cli		   dmstats			mkfs.ext4^M
+alsa			    wipefs	       pwunconv		     unix_chkpwd	    ipp-usb		       ntfsundelete	   dosfslabel			mkfs.ext3^M
+update-secureboot-policy    uuidd	       pwconv		     pam_timestamp_check    saned		       ntfsresize	   dosfsck			mkfs.ext2^M
+vpddecode		    switch_root        pwck		     pam_extrausers_update  wpa_action		       ntfslabel	   ebtables-save		mkfs.vfat^M
+ownership		    swapon	       nologin		     pam_extrausers_chkpwd  umount.udisks2	       ntfscp		   ebtables-restore		mkfs.ntfs^M
+dmidecode		    swapoff	       newusers		     mkhomedir_helper	    dkms		       ntfsclone	   ebtables-nft-save		mkfs.msdos^M
+biosdecode		    swaplabel	       grpunconv	     faillock		    cups-browsed	       mkntfs		   ebtables-nft-restore		mount.ntfs-3g^M
+update-pciids		    sulogin	       grpconv		     vdpa		    upgrade-from-grub-legacy   NetworkManager	   ebtables-nft			mount.ntfs^M
+iucode_tool		    sfdisk	       grpck		     tipc		    update-grub		       apparmor_parser	   ebtables			mount.lowntfs-3g^M
+update-ca-certificates	    runuser	       groupmod		     tc			    grub-set-default	       aa-status	   e2mmpstatus			mount.fuse^M
+shadowconfig		    rtcwake	       groupmems	     rtmon		    grub-reboot		       aa-remove-unknown   e2label			modprobe^M
+brltty-setup		    rfkill	       groupdel		     rtacct		    grub-probe		       dhclient-script	   fsck.ext4			modinfo^M
+update-dictcommon-hunspell  readprofile        groupadd		     genl		    grub-mkdevicemap	       dhclient		   fsck.ext3			netplan^M
+update-dictcommon-aspell    pivot_root	       cppw		     devlink		    grub-mkconfig	       applygnupgdefaults  fsck.ext2			poweroff^M
+update-default-wordlist     mkswap	       chpasswd		     dcb		    grub-macbless	       addgnupghome	   fsck.vfat			reboot^M
+update-default-ispell	    mkfs.minix	       chgpasswd	     bridge		    grub-install	       validlocale	   fsck.msdos			rmt^M
+select-default-wordlist     mkfs.cramfs        mkinitramfs	     arpd		    gdm3		       update-locale	   getty			rmmod^M
+select-default-ispell	    mkfs.bfs	       aptd		     xtables-nft-multi	    dnsmasq		       locale-gen	   grub-bios-setup		runlevel^M
+remove-default-wordlist     mkfs	       accessdb		     xtables-legacy-multi   rsyslogd		       zic		   halt				shutdown^M
+remove-default-ispell	    losetup	       create-cracklib-dict  nfnl_osf		    update-icon-caches	       ldconfig.real	   insmod			telinit^M
+ispell-autobuildhash	    ldattach	       cracklib-unpacker     irqbalance-ui	    start-stop-daemon	       ldconfig		   init				update-default-aspell^M
+aspell-autobuildhash	    isosize	       cracklib-packer	     irqbalance		    logrotate		       iconvconfig	   ip6tables-translate		update-grub2^M
+update-rc.d		    hwclock	       cracklib-format	     vcstime		    lpmove		       smbd		   ip6tables-save		vigr^M
+invoke-rc.d		    fstrim	       cracklib-check	     setvtrgb		    lpinfo		       samba_upgradedns    ip6tables-restore-translate	xtables-monitor^M
+update-mime		    fsfreeze	       plymouthd	     setvesablank	    lpc			       samba_spnupdate	   ip6tables-restore		VBoxService^M
+killall5		    fsck.minix	       openvpn		     kbdrate		    lpadmin		       samba_kcc	   ip6tables-nft-save		vbox-greeter^M
+fstab-decode		    fsck.cramfs        thermald		     kerneloops		    ippeveprinter	       samba-gpupdate	   ip6tables-nft-restore	rcvboxadd^M
+make-ssl-cert		    fsck	       anacron		     setcap		    cupsfilter		       samba_downgrade_db  ip6tables-nft		rcvboxadd-service^M
+u-d-c-print-pci-ids	    findfs	       avahi-daemon	     getpcaps		    cupsd		       samba_dnsupdate	   ip6tables-legacy-save	vbox-uninstall-guest-additions^M
+alsa-info		    fdisk	       avahi-autoipd	     getcap		    cupsctl		       samba		   ip6tables-legacy-restore	mount.vboxsf^M
+alsactl			    ctrlaltdel	       update-passwd	     capsh		    cupsaccept		       nmbd		   ip6tables-legacy^M
+alsabat-test		    chmem	       nft		     paperconfig	    tune2fs		       mksmbpasswd	   ip6tables-apply^M
+ethtool			    chcpu	       cron		     partprobe		    resize2fs		       eventlogadm	   ip6tables^M
+acpid			    cfdisk	       sync-available	     parted		    mklost+found	       addgroup		   ip^M
+[Parent]: Child 3457 finished with status code 0^M
+Selection #3: /usr/sbin^M
+[Parent]: I am waiting for PID 3458 to finish^M
+[Child, PID: 3458]: Executing 'ls -tr' command..^M
+update-grub-gfxpayload	    update-info-dir    blockdev		     update-shells	    pccardctl		       mke2fs		   arptables-save		iptables-translate^M
+tzconfig		    chroot	       blkzone		     remove-shell	    pptpsetup		       logsave		   arptables-restore		iptables-save^M
+update-fonts-alias	    pam-auth-update    blkid		     installkernel	    pptp		       filefrag		   arptables-nft-save		iptables-restore-translate^M
+update-fonts-dir	    update-initramfs   blkdiscard	     add-shell		    tarcat		       e4defrag		   arptables-nft-restore	iptables-restore^M
+update-fonts-scale	    aa-teardown        agetty		     mkfs.fat		    rmt-tar		       e4crypt		   arptables-nft		iptables-nft-save^M
+update-xmlcatalog	    visudo	       spice-vdagentd	     fsck.fat		    usb_modeswitch_dispatcher  e2undo		   arptables			iptables-nft-restore^M
+on_ac_power		    sudo_sendlog       pppstats		     fatlabel		    usb_modeswitch	       e2scrub_all	   apparmor_status		iptables-nft^M
+update-cracklib		    sudo_logsrvd       pppoe-discovery	     getweb		    usbmuxd		       e2scrub		   brltty			iptables-legacy-save^M
+gnome-menus-blacklist	    service	       pppdump		     mount.fuse3	    zerofree		       e2image		   bluetoothd			iptables-legacy-restore^M
+update-catalog		    ModemManager       pppd		     sgdisk		    rtkitctl		       e2fsck		   cpgr				iptables-legacy^M
+install-sgmlcatalog	    dmsetup	       chat		     gdisk		    iwspy		       e2freefrag	   cupsreject			iptables^M
+pam_getenv		    blkdeactivate      sysctl		     fixparts		    iwpriv		       dumpe2fs		   cupsenable			iucode-tool^M
+update-inetd		    ufw		       vipw		     cgdisk		    iwlist		       debugfs		   cupsdisable			lspcmcia^M
+deluser			    dpkg-reconfigure   usermod		     update-gsfontmap	    iwgetid		       badblocks	   delgroup			lsmod^M
+adduser			    dpkg-preconfigure  userdel		     hdparm		    iwevent		       wpa_supplicant	   depmod			mkdosfs^M
+iptables-apply		    zramctl	       useradd		     unix_update	    iwconfig		       wpa_cli		   dmstats			mkfs.ext4^M
+alsa			    wipefs	       pwunconv		     unix_chkpwd	    ipp-usb		       ntfsundelete	   dosfslabel			mkfs.ext3^M
+update-secureboot-policy    uuidd	       pwconv		     pam_timestamp_check    saned		       ntfsresize	   dosfsck			mkfs.ext2^M
+vpddecode		    switch_root        pwck		     pam_extrausers_update  wpa_action		       ntfslabel	   ebtables-save		mkfs.vfat^M
+ownership		    swapon	       nologin		     pam_extrausers_chkpwd  umount.udisks2	       ntfscp		   ebtables-restore		mkfs.ntfs^M
+dmidecode		    swapoff	       newusers		     mkhomedir_helper	    dkms		       ntfsclone	   ebtables-nft-save		mkfs.msdos^M
+biosdecode		    swaplabel	       grpunconv	     faillock		    cups-browsed	       mkntfs		   ebtables-nft-restore		mount.ntfs-3g^M
+update-pciids		    sulogin	       grpconv		     vdpa		    upgrade-from-grub-legacy   NetworkManager	   ebtables-nft			mount.ntfs^M
+iucode_tool		    sfdisk	       grpck		     tipc		    update-grub		       apparmor_parser	   ebtables			mount.lowntfs-3g^M
+update-ca-certificates	    runuser	       groupmod		     tc			    grub-set-default	       aa-status	   e2mmpstatus			mount.fuse^M
+shadowconfig		    rtcwake	       groupmems	     rtmon		    grub-reboot		       aa-remove-unknown   e2label			modprobe^M
+brltty-setup		    rfkill	       groupdel		     rtacct		    grub-probe		       dhclient-script	   fsck.ext4			modinfo^M
+update-dictcommon-hunspell  readprofile        groupadd		     genl		    grub-mkdevicemap	       dhclient		   fsck.ext3			netplan^M
+update-dictcommon-aspell    pivot_root	       cppw		     devlink		    grub-mkconfig	       applygnupgdefaults  fsck.ext2			poweroff^M
+update-default-wordlist     mkswap	       chpasswd		     dcb		    grub-macbless	       addgnupghome	   fsck.vfat			reboot^M
+update-default-ispell	    mkfs.minix	       chgpasswd	     bridge		    grub-install	       validlocale	   fsck.msdos			rmt^M
+select-default-wordlist     mkfs.cramfs        mkinitramfs	     arpd		    gdm3		       update-locale	   getty			rmmod^M
+select-default-ispell	    mkfs.bfs	       aptd		     xtables-nft-multi	    dnsmasq		       locale-gen	   grub-bios-setup		runlevel^M
+remove-default-wordlist     mkfs	       accessdb		     xtables-legacy-multi   rsyslogd		       zic		   halt				shutdown^M
+remove-default-ispell	    losetup	       create-cracklib-dict  nfnl_osf		    update-icon-caches	       ldconfig.real	   insmod			telinit^M
+ispell-autobuildhash	    ldattach	       cracklib-unpacker     irqbalance-ui	    start-stop-daemon	       ldconfig		   init				update-default-aspell^M
+aspell-autobuildhash	    isosize	       cracklib-packer	     irqbalance		    logrotate		       iconvconfig	   ip6tables-translate		update-grub2^M
+update-rc.d		    hwclock	       cracklib-format	     vcstime		    lpmove		       smbd		   ip6tables-save		vigr^M
+invoke-rc.d		    fstrim	       cracklib-check	     setvtrgb		    lpinfo		       samba_upgradedns    ip6tables-restore-translate	xtables-monitor^M
+update-mime		    fsfreeze	       plymouthd	     setvesablank	    lpc			       samba_spnupdate	   ip6tables-restore		VBoxService^M
+killall5		    fsck.minix	       openvpn		     kbdrate		    lpadmin		       samba_kcc	   ip6tables-nft-save		vbox-greeter^M
+fstab-decode		    fsck.cramfs        thermald		     kerneloops		    ippeveprinter	       samba-gpupdate	   ip6tables-nft-restore	rcvboxadd^M
+make-ssl-cert		    fsck	       anacron		     setcap		    cupsfilter		       samba_downgrade_db  ip6tables-nft		rcvboxadd-service^M
+u-d-c-print-pci-ids	    findfs	       avahi-daemon	     getpcaps		    cupsd		       samba_dnsupdate	   ip6tables-legacy-save	vbox-uninstall-guest-additions^M
+alsa-info		    fdisk	       avahi-autoipd	     getcap		    cupsctl		       samba		   ip6tables-legacy-restore	mount.vboxsf^M
+alsactl			    ctrlaltdel	       update-passwd	     capsh		    cupsaccept		       nmbd		   ip6tables-legacy^M
+alsabat-test		    chmem	       nft		     paperconfig	    tune2fs		       mksmbpasswd	   ip6tables-apply^M
+ethtool			    chcpu	       cron		     partprobe		    resize2fs		       eventlogadm	   ip6tables^M
+acpid			    cfdisk	       sync-available	     parted		    mklost+found	       addgroup		   ip^M
+[Parent]: Child 3458 finished with status code 0^M
+Selection #4: /proc^M
+[Parent]: I am waiting for PID 3459 to finish^M
+[Child, PID: 3459]: Executing 'ls -tr' command..^M
+thread-self  80  67  52  39   27   21	164  147  13	   pressure  746	 819  386   1090    1642  1756	1916	      driver		 slabinfo     dynamic_debug  1972  2030  2271  2120  3297^M
+self	     79  66  51  38   26   20	16   145  129	   663	     752	 823  385   asound  1641  1768	1923	      cpuinfo		 partitions   dma	     1980  1979  2283  2118  3218^M
+cmdline      78  65  50  37   257  2	159  142  128	   666	     751	 840  384   1246    1643  1787	zoneinfo      consoles		 mtd	      diskstats      1984  2057  2307  2108  3162^M
+sys	     77  64  5	 36   256  19	158  141  12	   731	     755	 929  383   1317    1654  1785	vmstat	      buddyinfo		 loadavg      crypto	     1986  2028  2123  2091  3118^M
+filesystems  76  63  49  34   255  185	157  140  11	   acpi      754	 928  382   1322    1657  1795	tty	      1400		 kpageflags   bootconfig     1987  2098  2110  2714  3082^M
+1	     75  62  48  33   254  180	156  14   10	   735	     753	 bus  381   1324    1674  1842	scsi	      1399		 kpagecount   1931	     1989  2064  2092  2768  3081^M
+uptime	     74  61  46  32   251  18	155  136  swaps    734	     757	 805  380   1328    1670  1848	schedstat     1398		 kpagecgroup  1937	     1988  2034  2346  2787  3399^M
+net	     73  60  45  31   250  179	154  135  devices  732	     stat	 765  379   1396    1683  1852	pagetypeinfo  vmallocinfo	 key-users    1939	     1991  2119  2366  2797  3459^M
+cgroups      72  58  44  30   25   176	153  134  330	   737	     interrupts  588  378   1410    1668  1880	mtrr	      version_signature  keys	      1942	     1993  2189  2379  2727  3455^M
+kcore	     70  57  43  3    248  175	152  133  meminfo  738	     761	 483  352   1562    1690  1891	misc	      timer_list	 kallsyms     1963	     2001  2249  2449  2708  3432^M
+95	     7	 56  42  289  247  170	151  132  377	   modules   758	 430  322   1626    1702  1898	locks	      sysvipc		 ioports      1961	     2020  2251  2467  2645  3400^M
+9	     69  55  40  288  24   166	150  131  mdstat   irq	     kmsg	 388  1041  1634    1739  1903	fs	      sysrq-trigger	 iomem	      1978	     2021  2257  2508  2959^M
+81	     68  54  4	 28   22   165	15   130  mounts   749	     version	 387  1052  1635    1706  1910	fb	      softirqs		 execdomains  1974	     2025  2260  2539  3312^M
+[Parent]: Child 3459 finished with status code 0^M
+Selection #5: /usr^M
+[Parent]: I am waiting for PID 3460 to finish^M
+[Child, PID: 3460]: Executing 'ls -tr' command..^M
+libx32	lib32  local  lib64  games  libexec  include  lib  share  bin  src  sbin^M
+[Parent]: Child 3460 finished with status code 0^M
+^[[?2004h^[]0;meg@meg-CS3013: ~/project1/Project1^G^[[01;32mmeg@meg-CS3013^[[00m:^[[01;34m~/project1/Project1^[[00m$ ./slug 1 ^M
+^[[?2004l^M[Slug PID: 3462] Executing the './slug 1 command^M
+Seed value: 55555^M
+[Slug PID: 3462] Delay time is 8 seconds. Coin flip: 0^M
+[Slug PID: 3462] I'll get the job done. Eventually...^M
+meg      tty2         0.0.0.0          Tue Sep  6 22:59   still logged in^M
+runlevel (to lvl 5)   0.0.0.0          Tue Sep  6 22:59   still running^M
+reboot   system boot  0.0.0.0          Tue Sep  6 22:59   still running^M
+meg      tty2         0.0.0.0          Tue Sep  6 21:10 - crash  (01:49)^M
+runlevel (to lvl 5)   0.0.0.0          Tue Sep  6 21:09 - 22:59  (01:49)^M
+reboot   system boot  0.0.0.0          Tue Sep  6 21:09   still running^M
+meg      tty2         0.0.0.0          Thu Sep  1 17:43 - crash (5+03:26)^M
+runlevel (to lvl 5)   0.0.0.0          Thu Sep  1 17:43 - 21:09 (5+03:26)^M
+reboot   system boot  0.0.0.0          Thu Sep  1 17:43   still running^M
+meg      tty2         0.0.0.0          Thu Sep  1 13:17 - crash  (04:26)^M
+runlevel (to lvl 5)   0.0.0.0          Thu Sep  1 13:10 - 17:43  (04:32)^M
+reboot   system boot  0.0.0.0          Thu Sep  1 13:10   still running^M
+meg      tty2         0.0.0.0          Tue Aug 30 16:04 - crash (1+21:06)^M
+runlevel (to lvl 5)   0.0.0.0          Tue Aug 30 16:03 - 13:10 (1+21:06)^M
+reboot   system boot  0.0.0.0          Tue Aug 30 16:03   still running^M
+meg      tty2         0.0.0.0          Tue Aug 30 10:25 - crash  (05:38)^M
+runlevel (to lvl 5)   0.0.0.0          Tue Aug 30 10:24 - 16:03  (05:39)^M
+reboot   system boot  0.0.0.0          Tue Aug 30 10:24   still running^M
+meg      tty2         0.0.0.0          Mon Aug 29 10:16 - crash (1+00:07)^M
+runlevel (to lvl 5)   0.0.0.0          Mon Aug 29 10:16 - 10:24 (1+00:07)^M
+reboot   system boot  0.0.0.0          Mon Aug 29 10:16   still running^M
+meg      tty2         0.0.0.0          Mon Aug 29 08:04 - crash  (02:11)^M
+runlevel (to lvl 5)   0.0.0.0          Mon Aug 29 08:03 - 10:16  (02:12)^M
+reboot   system boot  0.0.0.0          Mon Aug 29 08:03   still running^M
+meg      tty2         0.0.0.0          Sun Aug 28 21:32 - crash  (10:31)^M
+runlevel (to lvl 5)   0.0.0.0          Sun Aug 28 21:31 - 08:03  (10:32)^M
+reboot   system boot  0.0.0.0          Sun Aug 28 21:31   still running^M
+shutdown system down  0.0.0.0          Sun Aug 28 21:31 - 21:31  (00:00)^M
+meg      tty2         0.0.0.0          Sun Aug 28 21:20 - down   (00:10)^M
+runlevel (to lvl 5)   0.0.0.0          Sun Aug 28 21:18 - 21:31  (00:12)^M
+reboot   system boot  0.0.0.0          Sun Aug 28 21:18 - 21:31  (00:13)^M
+^M
+wtmp begins Sun Aug 28 21:18:14 2022^M
+^[[?2004h^[]0;meg@meg-CS3013: ~/project1/Project1^G^[[01;32mmeg@meg-CS3013^[[00m:^[[01;34m~/project1/Project1^[[00m$ ./slug2^H^[[K 2^M
+^[[?2004l^M[Slug PID: 3464] Executing the './slug 2 command^M
+Seed value: 56789^M
+[Slug PID: 3464] Delay time is 6 seconds. Coin flip: 1^M
+[Slug PID: 3464] I'll get the job done. Eventually...^M
+1000^M
+^[[?2004h^[]0;meg@meg-CS3013: ~/project1/Project1^G^[[01;32mmeg@meg-CS3013^[[00m:^[[01;34m~/project1/Project1^[[00m$ ./slug3 ^H^[[K^H^[[K 3^M
+^[[?2004l^M[Slug PID: 3465] Executing the './slug 3 command^M
+Seed value: 12345^M
+[Slug PID: 3465] Delay time is 8 seconds. Coin flip: 1^M
+[Slug PID: 3465] I'll get the job done. Eventually...^M
+1000^M
+^[[?2004h^[]0;meg@meg-CS3013: ~/project1/Project1^G^[[01;32mmeg@meg-CS3013^[[00m:^[[01;34m~/project1/Project1^[[00m$ ./slug4^H^[[K 4^M
+^[[?2004l^M[Slug PID: 3466] Executing the './slug 4 command^M
+Seed value: 456^M
+[Slug PID: 3466] Delay time is 5 seconds. Coin flip: 1^M
+[Slug PID: 3466] I'll get the job done. Eventually...^M
+1000^M
+^[[?2004h^[]0;meg@meg-CS3013: ~/project1/Project1^G^[[01;32mmeg@meg-CS3013^[[00m:^[[01;34m~/project1/Project1^[[00m$ ./slug ^H^[[Krace^M
+^[[?2004l^M[Parent] I forked off child 3468. ^M
+[Child, PID: 3469]: Executing './slug 1' command^M
+[Parent] I forked off child 3468. ^M
+[Parent] I forked off child 3468. ^M
+[Parent] I forked off child 3468. ^M
+[Child, PID: 3470]: Executing './slug 2' command^M
+[Child, PID: 3471]: Executing './slug 3' command^M
+[Slug PID: 3469] Executing the './slug 1 command^M
+Seed value: 55555^M
+[Slug PID: 3469] Delay time is 8 seconds. Coin flip: 0^M
+[Slug PID: 3469] I'll get the job done. Eventually...^M
+[Slug PID: 3470] Executing the './slug 2 command^M
+Seed value: 56789^M
+[Slug PID: 3471] Executing the './slug 3 command^M
+[Slug PID: 3470] Delay time is 6 seconds. Coin flip: 1^M
+[Slug PID: 3470] I'll get the job done. Eventually...^M
+Seed value: 12345^M
+[Slug PID: 3471] Delay time is 8 seconds. Coin flip: 1^M
+[Slug PID: 3471] I'll get the job done. Eventually...^M
+[Child, PID: 3472]: Executing './slug 4' command^M
+[Slug PID: 3472] Executing the './slug 4 command^M
+Seed value: 456^M
+[Slug PID: 3472] Delay time is 5 seconds. Coin flip: 1^M
+[Slug PID: 3472] I'll get the job done. Eventually...^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+1000^M
+The race is still going, the following children are still racing: 3469,3470,3471,3472,^M
+Child 3472 finished! Elapsed time: 6.000000 ^M
+The race is still going, the following children are still racing: 3469,3470,3471,^M
+The race is still going, the following children are still racing: 3469,3470,3471,^M
+The race is still going, the following children are still racing: 3469,3470,3471,^M
+1000^M
+The race is still going, the following children are still racing: 3469,3470,3471,^M
+Child 3470 finished! Elapsed time: 6.000000 ^M
+The race is still going, the following children are still racing: 3469,3471,^M
+The race is still going, the following children are still racing: 3469,3471,^M
+The race is still going, the following children are still racing: 3469,3471,^M
+The race is still going, the following children are still racing: 3469,3471,^M
+The race is still going, the following children are still racing: 3469,3471,^M
+The race is still going, the following children are still racing: 3469,3471,^M
+The race is still going, the following children are still racing: 3469,3471,^M
+The race is still going, the following children are still racing: 3469,3471,^M
+The race is still going, the following children are still racing: 3469,3471,^M
+meg      tty2         0.0.0.0          Tue Sep  6 22:59   still logged in^M
+runlevel (to lvl 5)   0.0.0.0          Tue Sep  6 22:59   still running^M
+reboot   system boot  0.0.0.0          Tue Sep  6 22:59   still running^M
+meg      tty2         0.0.0.0          Tue Sep  6 21:10 - crash  (01:49)^M
+runlevel (to lvl 5)   0.0.0.0          Tue Sep  6 21:09 - 22:59  (01:49)^M
+reboot   system boot  0.0.0.0          Tue Sep  6 21:09   still running^M
+meg      tty2         0.0.0.0          Thu Sep  1 17:43 - crash (5+03:26)^M
+runlevel (to lvl 5)   0.0.0.0          Thu Sep  1 17:43 - 21:09 (5+03:26)^M
+reboot   system boot  0.0.0.0          Thu Sep  1 17:43   still running^M
+meg      tty2         0.0.0.0          Thu Sep  1 13:17 - crash  (04:26)^M
+runlevel (to lvl 5)   0.0.0.0          Thu Sep  1 13:10 - 17:43  (04:32)^M
+reboot   system boot  0.0.0.0          Thu Sep  1 13:10   still running^M
+meg      tty2         0.0.0.0          Tue Aug 30 16:04 - crash (1+21:06)^M
+runlevel (to lvl 5)   0.0.0.0          Tue Aug 30 16:03 - 13:10 (1+21:06)^M
+reboot   system boot  0.0.0.0          Tue Aug 30 16:03   still running^M
+meg      tty2         0.0.0.0          Tue Aug 30 10:25 - crash  (05:38)^M
+1000^M
+runlevel (to lvl 5)   0.0.0.0          Tue Aug 30 10:24 - 16:03  (05:39)^M
+reboot   system boot  0.0.0.0          Tue Aug 30 10:24   still running^M
+meg      tty2         0.0.0.0          Mon Aug 29 10:16 - crash (1+00:07)^M
+runlevel (to lvl 5)   0.0.0.0          Mon Aug 29 10:16 - 10:24 (1+00:07)^M
+reboot   system boot  0.0.0.0          Mon Aug 29 10:16   still running^M
+meg      tty2         0.0.0.0          Mon Aug 29 08:04 - crash  (02:11)^M
+runlevel (to lvl 5)   0.0.0.0          Mon Aug 29 08:03 - 10:16  (02:12)^M
+reboot   system boot  0.0.0.0          Mon Aug 29 08:03   still running^M
+meg      tty2         0.0.0.0          Sun Aug 28 21:32 - crash  (10:31)^M
+runlevel (to lvl 5)   0.0.0.0          Sun Aug 28 21:31 - 08:03  (10:32)^M
+reboot   system boot  0.0.0.0          Sun Aug 28 21:31   still running^M
+shutdown system down  0.0.0.0          Sun Aug 28 21:31 - 21:31  (00:00)^M
+meg      tty2         0.0.0.0          Sun Aug 28 21:20 - down   (00:10)^M
+runlevel (to lvl 5)   0.0.0.0          Sun Aug 28 21:18 - 21:31  (00:12)^M
+reboot   system boot  0.0.0.0          Sun Aug 28 21:18 - 21:31  (00:13)^M
+^M
+wtmp begins Sun Aug 28 21:18:14 2022^M
+The race is still going, the following children are still racing: 3469,3471,^M
+Child 3469 finished! Elapsed time: 9.000000 ^M
+Child 3471 finished! Elapsed time: 9.000000 ^M
+The race is still going, the following children are still racing: ^M
+The race is complete, total elapsed time: 9.000000 ^M
+^[[?2004h^[]0;meg@meg-CS3013: ~/project1/Project1^G^[[01;32mmeg@meg-CS3013^[[00m:^[[01;34m~/project1/Project1^[[00m$ exit^M
+^[[?2004l^Mexit^M
+
+Script done on 2022-09-06 23:50:19-04:00 [COMMAND_EXIT_CODE="0"]
