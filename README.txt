@@ -1,1 +1,3 @@
-We tested our program by rerunning it and printing out variables and PID numbers to ensure that the child and parent processes were correctly being created. Printing the PIDs were most helpful in the last few questions to ensure we were correctly creating and forking the processes. The most trouble we had was when creating the makefile, our programs were not correctly running and producing segmentation fault errors. Using a lot of print statements, we were able to see what was going on and where in our code to solve issues and assist in debugging before going to the actual debugger. We read the seed file and as command line argument and while following the example, we realized it was not done the same. We tested by comparing our results to the sample code to ensure we were on the right track and our code was executing as intended. 
+Models process creation, termination, and resource usage in the Linux operating system.
+
+CS3013 Operating Systems Project
